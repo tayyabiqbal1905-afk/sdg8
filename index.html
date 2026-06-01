@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SDG 8 — Decent Work &amp; Financial Literacy</title>
+  <meta name="description" content="A student-led project exploring SDG 8: Decent Work and Economic Growth through financial literacy tools and education." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- Progress Bar -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ── Navigation ── -->
+<nav class="nav" id="mainNav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" data-page="home">
+        <span class="badge">8</span>
+        SDG Financial Literacy
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link" data-page="home"   href="#">Home</a></li>
+        <li><a class="nav-link" data-page="learn"  href="#">Learn</a></li>
+        <li><a class="nav-link" data-page="tools"  href="#">Tools</a></li>
+        <li><a class="nav-link" data-page="impact" href="#">Global Impact</a></li>
+        <li><a class="nav-link" data-page="about"  href="#">About</a></li>
+        <li><a class="nav-link nav-cta" data-page="tools" href="#">Try the Calculator</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════
+     PAGE: HOME
+════════════════════════════════════════ -->
+<section id="page-home" class="page-section">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text animate-up">
+          <span class="section-label">UN Sustainable Development Goal 8</span>
+          <h1>Decent Work.<br>Economic Growth.<br><em>Financial Freedom.</em></h1>
+          <p>SDG 8 calls for sustained, inclusive economic growth and decent work for all. It starts with something practical: understanding your money. Financial literacy is one of the most powerful tools for economic empowerment.</p>
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary" data-page="learn">Start Learning →</a>
+            <a href="#" class="btn btn-outline" data-page="tools">Try the Budget Tool</a>
+          </div>
+          <div class="scroll-hint">
+            <span class="line"></span>
+            Scroll to explore
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card animate-up">
+            <div class="stat-number">23.5%</div>
+            <div class="stat-desc">Global youth unemployment rate — roughly 1 in 4 young people worldwide cannot find work. (ILO, 2024)</div>
+          </div>
+          <div class="stat-card animate-up">
+            <div class="stat-number">1.4B</div>
+            <div class="stat-desc">Adults worldwide lack access to basic financial services, limiting their ability to save, invest, or borrow safely.</div>
+          </div>
+          <div class="stat-card animate-up">
+            <div class="stat-number">33%</div>
+            <div class="stat-desc">Only 1 in 3 adults globally are considered financially literate — understanding basic concepts like interest, inflation, and risk.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SDG Band -->
+  <div class="sdg-band">
+    <div class="container">
+      <div class="sdg-band-inner">
+        <div class="sdg-icon-large">8</div>
+        <div class="sdg-band-text">
+          <h3>Goal 8: Decent Work &amp; Economic Growth</h3>
+          <p>Promote sustained, inclusive, and sustainable economic growth, full and productive employment, and decent work for all.</p>
+        </div>
+        <div class="sdg-targets">
+          <span class="target-pill">Target 8.6 — Youth employment</span>
+          <span class="target-pill">Target 8.10 — Financial inclusion</span>
+          <span class="target-pill">Target 8.3 — Economic productivity</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Overview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Why This Matters</span>
+        <h2>Financial literacy is an economic right</h2>
+        <p>When people understand money, they make better decisions — for themselves, their families, and their communities. That's how growth becomes inclusive.</p>
+      </div>
+
+      <div class="learn-grid">
+        <div class="learn-card animate-up">
+          <div class="card-icon">💼</div>
+          <h3>Work &amp; Wages</h3>
+          <p>Understanding how income works — wages, salaries, benefits, and taxes — is foundational to building economic independence and making the most of what you earn.</p>
+        </div>
+        <div class="learn-card animate-up">
+          <div class="card-icon">📊</div>
+          <h3>Budgeting Basics</h3>
+          <p>A budget is simply a plan for your money. Learning to track income and expenses puts you in control, reducing stress and building resilience against unexpected costs.</p>
+        </div>
+        <div class="learn-card animate-up">
+          <div class="card-icon">🌍</div>
+          <h3>Global Connection</h3>
+          <p>When individuals are financially literate, communities thrive. Lower personal debt, higher savings rates, and informed spending all contribute to broader economic growth.</p>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top: 40px;">
+        <a href="#" class="btn btn-primary" data-page="learn">Explore All Topics →</a>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+
+<!-- ══════════════════════════════════════
+     PAGE: LEARN
+════════════════════════════════════════ -->
+<section id="page-learn" class="page-section">
+  <div class="page-header" style="display:block; padding: 100px 0 52px; background: linear-gradient(135deg, var(--green-pale) 0%, var(--warm-white) 100%); border-bottom: 1px solid var(--stone);">
+    <div class="container">
+      <span class="section-label">Financial Education</span>
+      <h1>Learn the Essentials</h1>
+      <p>Clear, practical knowledge about managing money — no jargon, no judgment. Just the skills that make a real difference.</p>
+    </div>
+  </div>
+
+  <!-- Budgeting -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Module 1</span>
+        <h2>Budgeting Basics</h2>
+        <p>A budget gives your money a job. Here's how to build one that actually works.</p>
+      </div>
+      <div class="learn-grid">
+        <div class="learn-card animate-up">
+          <div class="card-icon">🧮</div>
+          <h3>Track Every Pound</h3>
+          <p>Start by writing down all income (wages, benefits, freelance work) and all regular outgoings. Knowing exactly what's coming in and going out is step one.</p>
+          <div class="tips">
+            <h4>Quick tips</h4>
+            <div class="tip-item">Use a free app like Monzo or YNAB to auto-track</div>
+            <div class="tip-item">Check bank statements weekly, not monthly</div>
+            <div class="tip-item">Categorise spending: needs vs. wants</div>
+          </div>
+        </div>
+        <div class="learn-card animate-up">
+          <div class="card-icon">⚖️</div>
+          <h3>The 50/30/20 Rule</h3>
+          <p>A simple framework: 50% of income on <em>needs</em> (rent, food, bills), 30% on <em>wants</em> (entertainment, dining out), and 20% to <em>savings or debt repayment</em>.</p>
+          <div class="tips">
+            <h4>Quick tips</h4>
+            <div class="tip-item">Adjust the ratios for your situation</div>
+            <div class="tip-item">Treat savings as a non-negotiable "bill"</div>
+            <div class="tip-item">Review your split every three months</div>
+          </div>
+        </div>
+        <div class="learn-card animate-up">
+          <div class="card-icon">📅</div>
+          <h3>Zero-Based Budgeting</h3>
+          <p>Give every pound a purpose — income minus all allocated spending equals zero. Nothing is "leftover"; surplus is allocated to savings or investment.</p>
+          <div class="tips">
+            <h4>Quick tips</h4>
+            <div class="tip-item">Works best with a fixed monthly income</div>
+            <div class="tip-item">Build in a "miscellaneous" buffer (3–5%)</div>
+            <div class="tip-item">Reset and replan at the start of each month</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 50/30/20 Visual -->
+      <div class="rule-box">
+        <div>
+          <h3>The 50/30/20 Budget Rule</h3>
+          <p>This widely-used framework provides a starting point for structuring your monthly budget. It balances essential costs, quality of life, and future security. Adjust the percentages to suit your income level and personal goals.</p>
+        </div>
+        <div class="rule-pills">
+          <div class="rule-pill">
+            <span class="pct">50%</span>
+            <span class="lbl">Needs</span>
+          </div>
+          <div class="rule-pill">
+            <span class="pct">30%</span>
+            <span class="lbl">Wants</span>
+          </div>
+          <div class="rule-pill">
+            <span class="pct">20%</span>
+            <span class="lbl">Savings</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Saving -->
+  <section class="section" style="background: var(--off-white);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Module 2</span>
+        <h2>Saving &amp; Building an Emergency Fund</h2>
+        <p>Saving isn't about having loads of money — it's about building security and options.</p>
+      </div>
+      <div class="learn-grid">
+        <div class="learn-card animate-up">
+          <div class="card-icon">🏦</div>
+          <h3>Emergency Fund First</h3>
+          <p>Before investing or paying off non-urgent debt, aim to save 3–6 months of essential expenses. This fund is your financial safety net — it prevents one bad month from spiralling into debt.</p>
+          <div class="tips">
+            <h4>Quick tips</h4>
+            <div class="tip-item">Keep it separate from your main account</div>
+            <div class="tip-item">High-interest savings accounts earn while you save</div>
+            <div class="tip-item">Start with £500 as your first milestone</div>
+          </div>
+        </div>
+        <div class="learn-card animate-up">
+          <div class="card-icon">📈</div>
+          <h3>Compound Interest</h3>
+          <p>Money earns interest, and that interest earns more interest. Over time, this compounding effect makes early saving extraordinarily powerful — even small amounts grow significantly.</p>
+          <div class="tips">
+            <h4>Quick tips</h4>
+            <div class="tip-item">£50/month from age 22 beats £200/month from 40</div>
+            <div class="tip-item">Use compound interest calculators to visualise growth</div>
+            <div class="tip-item">Look into ISAs for tax-free UK savings</div>
+          </div>
+        </div>
+        <div class="learn-card animate-up">
+          <div class="card-icon">🎯</div>
+          <h3>Goal-Based Saving</h3>
+          <p>Vague saving is hard. Concrete goals work: "Save £2,000 for a holiday by June" is motivating in a way "save more" never is. Break big goals into monthly targets.</p>
+          <div class="tips">
+            <h4>Quick tips</h4>
+            <div class="tip-item">Use our savings calculator on the Tools page</div>
+            <div class="tip-item">Name your savings pots by goal (e.g. "Holiday 2025")</div>
+            <div class="tip-item">Automate transfers on payday — pay yourself first</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Debt -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Module 3</span>
+        <h2>Understanding Debt</h2>
+        <p>Not all debt is bad — but understanding it is essential. Here's how to take control.</p>
+      </div>
+      <div class="learn-grid">
+        <div class="learn-card animate-up">
+          <div class="card-icon">💳</div>
+          <h3>Good Debt vs Bad Debt</h3>
+          <p>A student loan or mortgage can be productive debt — it builds long-term value. High-interest credit card balances or payday loans are costly and can trap people in cycles of repayment.</p>
+          <div class="tips">
+            <h4>Quick tips</h4>
+            <div class="tip-item">Always read the APR (annual percentage rate)</div>
+            <div class="tip-item">Pay more than the minimum on credit cards</div>
+            <div class="tip-item">Prioritise high-interest debt first</div>
+          </div>
+        </div>
+        <div class="learn-card animate-up">
+          <div class="card-icon">🔁</div>
+          <h3>The Avalanche Method</h3>
+          <p>List all debts by interest rate, highest first. Pay minimums on all, then throw extra money at the highest-rate debt. Once cleared, roll that payment to the next. Saves the most in interest.</p>
+          <div class="tips">
+            <h4>Quick tips</h4>
+            <div class="tip-item">Snowball method (lowest balance first) works better for motivation</div>
+            <div class="tip-item">Never take new debt to pay old debt</div>
+            <div class="tip-item">Contact creditors early if you're struggling — they can help</div>
+          </div>
+        </div>
+        <div class="learn-card animate-up">
+          <div class="card-icon">🛡️</div>
+          <h3>Protecting Your Credit</h3>
+          <p>A good credit history unlocks better rates on loans and mortgages. It's built through consistent on-time payments, not by avoiding credit entirely.</p>
+          <div class="tips">
+            <h4>Quick tips</h4>
+            <div class="tip-item">Register on the electoral roll</div>
+            <div class="tip-item">Check your credit report free via Experian or ClearScore</div>
+            <div class="tip-item">Never miss a bill payment — set up Direct Debits</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Income -->
+  <section class="section" style="background: var(--off-white);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Module 4</span>
+        <h2>Understanding Your Income</h2>
+        <p>Knowing the difference between gross and net pay — and understanding taxes — means fewer surprises.</p>
+      </div>
+      <div class="learn-grid">
+        <div class="learn-card animate-up">
+          <div class="card-icon">📄</div>
+          <h3>Gross vs Net Pay</h3>
+          <p>Gross pay is what you earn. Net pay ("take-home") is what you actually receive after National Insurance, income tax, pension contributions and student loan repayments are deducted. Budget with net pay.</p>
+          <div class="tips">
+            <h4>Quick tips</h4>
+            <div class="tip-item">Use a payslip checker to understand deductions</div>
+            <div class="tip-item">UK personal tax allowance is £12,570 (2024/25)</div>
+            <div class="tip-item">Employer pension contributions are "free money" — always opt in</div>
+          </div>
+        </div>
+        <div class="learn-card animate-up">
+          <div class="card-icon">💸</div>
+          <h3>Multiple Income Streams</h3>
+          <p>Relying on a single income is risky. Freelancing, part-time work, selling items, or eventually investment income can all add resilience. Start small — one extra stream makes a difference.</p>
+          <div class="tips">
+            <h4>Quick tips</h4>
+            <div class="tip-item">Declare freelance income to HMRC for Self Assessment</div>
+            <div class="tip-item">Side income can be built gradually alongside full-time work</div>
+            <div class="tip-item">Skills-based side work (tutoring, design, writing) scales well</div>
+          </div>
+        </div>
+        <div class="learn-card animate-up">
+          <div class="card-icon">🌱</div>
+          <h3>Investing for the Future</h3>
+          <p>Once you have an emergency fund and manageable debt, consider investing. Over the long term, stocks and shares ISAs typically outperform cash savings accounts, though they carry more risk.</p>
+          <div class="tips">
+            <h4>Quick tips</h4>
+            <div class="tip-item">Invest only what you can afford to leave for 5+ years</div>
+            <div class="tip-item">Diversification reduces risk — don't put all eggs in one basket</div>
+            <div class="tip-item">Index funds are a low-cost starting point</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+
+<!-- ══════════════════════════════════════
+     PAGE: TOOLS
+════════════════════════════════════════ -->
+<section id="page-tools" class="page-section">
+  <div style="display:block; padding: 100px 0 52px; background: linear-gradient(135deg, var(--blue-pale) 0%, var(--warm-white) 100%); border-bottom: 1px solid var(--stone);">
+    <div class="container">
+      <span class="section-label blue">Interactive Tools</span>
+      <h1 style="font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3rem); color:var(--blue-deep); margin-bottom:12px;">Budget &amp; Savings Calculator</h1>
+      <p style="font-size:1.05rem; color:var(--text-mid); max-width:560px;">Enter your monthly income and outgoings to see exactly where your money goes — with personalised tips to improve your financial health.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="tools-layout">
+
+        <!-- Calculator Input -->
+        <div>
+          <div class="calculator-card">
+            <div class="calc-header">
+              <h3>Monthly Budget Calculator</h3>
+              <p>All figures in £ GBP. Works entirely in your browser — nothing is stored.</p>
+            </div>
+            <div class="calc-body">
+
+              <div class="calc-section-title">Your Income</div>
+              <div class="input-row income-input">
+                <label>Monthly take-home income (after tax)</label>
+                <div class="input-wrap">
+                  <span class="prefix">£</span>
+                  <input type="number" id="income" placeholder="e.g. 2400" min="0" step="1" />
+                </div>
+              </div>
+
+              <div class="calc-section-title">Housing &amp; Bills</div>
+              <div class="input-row">
+                <label>Rent / Mortgage</label>
+                <div class="input-wrap"><span class="prefix">£</span><input type="number" id="exp-housing" placeholder="0" min="0" step="1" /></div>
+              </div>
+              <div class="input-row">
+                <label>Bills &amp; Utilities (gas, electric, internet)</label>
+                <div class="input-wrap"><span class="prefix">£</span><input type="number" id="exp-utilities" placeholder="0" min="0" step="1" /></div>
+              </div>
+
+              <div class="calc-section-title">Everyday Spending</div>
+              <div class="input-row">
+                <label>Food &amp; Groceries</label>
+                <div class="input-wrap"><span class="prefix">£</span><input type="number" id="exp-food" placeholder="0" min="0" step="1" /></div>
+              </div>
+              <div class="input-row">
+                <label>Transport (bus, fuel, train)</label>
+                <div class="input-wrap"><span class="prefix">£</span><input type="number" id="exp-transport" placeholder="0" min="0" step="1" /></div>
+              </div>
+
+              <div class="calc-section-title">Lifestyle</div>
+              <div class="input-row">
+                <label>Entertainment &amp; Subscriptions</label>
+                <div class="input-wrap"><span class="prefix">£</span><input type="number" id="exp-entertainment" placeholder="0" min="0" step="1" /></div>
+              </div>
+              <div class="input-row">
+                <label>Clothing &amp; Personal care</label>
+                <div class="input-wrap"><span class="prefix">£</span><input type="number" id="exp-clothing" placeholder="0" min="0" step="1" /></div>
+              </div>
+              <div class="input-row">
+                <label>Healthcare / Prescriptions</label>
+                <div class="input-wrap"><span class="prefix">£</span><input type="number" id="exp-healthcare" placeholder="0" min="0" step="1" /></div>
+              </div>
+
+              <div class="calc-section-title">Savings &amp; Other</div>
+              <div class="input-row">
+                <label>Monthly savings</label>
+                <div class="input-wrap"><span class="prefix">£</span><input type="number" id="exp-savings" placeholder="0" min="0" step="1" /></div>
+              </div>
+              <div class="input-row">
+                <label>Other / Miscellaneous</label>
+                <div class="input-wrap"><span class="prefix">£</span><input type="number" id="exp-other" placeholder="0" min="0" step="1" /></div>
+              </div>
+
+              <button class="calc-btn" onclick="calculateBudget()">Calculate My Budget →</button>
+
+            </div>
+          </div>
+
+          <!-- Savings Goal -->
+          <div class="savings-card">
+            <div class="savings-header">
+              <h3>🎯 Savings Goal Calculator</h3>
+              <p>Set a target and find out how much to save each month.</p>
+            </div>
+            <div class="savings-body">
+              <div class="savings-grid">
+                <div class="field-group">
+                  <label>Goal Amount (£)</label>
+                  <input type="number" id="goal-amount" placeholder="e.g. 3000" min="0" />
+                </div>
+                <div class="field-group">
+                  <label>Timeframe (months)</label>
+                  <select id="goal-months">
+                    <option value="">Select...</option>
+                    <option value="3">3 months</option>
+                    <option value="6">6 months</option>
+                    <option value="9">9 months</option>
+                    <option value="12">1 year</option>
+                    <option value="18">18 months</option>
+                    <option value="24">2 years</option>
+                    <option value="36">3 years</option>
+                    <option value="60">5 years</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label>Already saved (£)</label>
+                  <input type="number" id="goal-current" placeholder="e.g. 500" min="0" />
+                </div>
+              </div>
+              <button class="savings-btn" onclick="calculateSavings()">Calculate Monthly Target</button>
+              <div class="savings-result" id="savingsResult">
+                <div class="monthly-need" id="monthly-need"></div>
+                <div class="desc" id="savings-desc"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results Panel -->
+        <div>
+          <div class="results-card" id="resultsCard">
+            <div class="results-header">
+              <h3>Your Budget Breakdown</h3>
+              <p>Here's where your money is going — and how to improve it.</p>
+            </div>
+            <div class="results-body">
+              <div class="summary-row">
+                <span class="label">Monthly income</span>
+                <span class="value neutral" id="res-income">—</span>
+              </div>
+              <div class="summary-row">
+                <span class="label">Total expenses</span>
+                <span class="value" id="res-expenses">—</span>
+              </div>
+              <div class="summary-row">
+                <span class="label" id="res-surplus-label">Monthly surplus</span>
+                <span class="value positive" id="res-surplus">—</span>
+              </div>
+              <div class="summary-row">
+                <span class="label">Savings rate</span>
+                <span class="value" id="res-savings-rate">—</span>
+              </div>
+
+              <div class="breakdown-title">Spending Breakdown (% of income)</div>
+              <div id="expenseBars"></div>
+
+              <div class="tips-section">
+                <h4>Personalised Tips</h4>
+                <div id="tipsContainer"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Placeholder before calculation -->
+          <div id="calcPlaceholder" style="background:white; border:1px solid var(--stone); border-radius:var(--radius-lg); padding:48px 40px; text-align:center; box-shadow:var(--shadow-sm);">
+            <div style="font-size:3rem; margin-bottom:16px;">📊</div>
+            <h3 style="font-family:'Playfair Display',serif; color:var(--text-dark); margin-bottom:10px;">Your breakdown appears here</h3>
+            <p style="color:var(--text-mid); font-size:0.95rem;">Fill in your income and expenses on the left, then press <strong>Calculate My Budget</strong> to see a personalised analysis.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     PAGE: GLOBAL IMPACT
+════════════════════════════════════════ -->
+<section id="page-impact" class="page-section">
+  <div style="display:block; padding: 100px 0 52px; background: linear-gradient(135deg, #e8f0fb 0%, var(--warm-white) 100%); border-bottom: 1px solid var(--stone);">
+    <div class="container">
+      <span class="section-label blue">Global Impact</span>
+      <h1 style="font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3rem); color:var(--blue-deep); margin-bottom:12px;">Financial Literacy &amp; the World</h1>
+      <p style="font-size:1.05rem; color:var(--text-mid); max-width:560px;">Poor financial literacy doesn't just affect individuals — it drives poverty, fuels inequality, and holds back entire economies. Here's the global picture.</p>
+    </div>
+  </div>
+
+  <section class="section impact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label blue">By the Numbers</span>
+        <h2>The Scale of the Challenge</h2>
+        <p>These statistics reveal why financial education is a development priority, not a luxury.</p>
+      </div>
+
+      <div class="impact-grid">
+        <div class="impact-card animate-up">
+          <div class="big-num">67%</div>
+          <h4>Financially Illiterate Adults</h4>
+          <p>Approximately two-thirds of adults globally cannot answer basic questions about interest, inflation, and risk diversification. (S&amp;P Global Financial Literacy Survey)</p>
+        </div>
+        <div class="impact-card animate-up">
+          <div class="big-num">$1.4T</div>
+          <h4>Cost of Financial Illiteracy</h4>
+          <p>Global annual economic losses attributable to poor financial decision-making, including unnecessary debt, missed investment returns, and inadequate retirement saving.</p>
+        </div>
+        <div class="impact-card animate-up">
+          <div class="big-num">740M</div>
+          <h4>Workers in Vulnerable Employment</h4>
+          <p>Over 740 million people worldwide are in informal, unstable work with no benefits or protections — unable to build savings or plan financially. (ILO, 2023)</p>
+        </div>
+        <div class="impact-card animate-up">
+          <div class="big-num">36%</div>
+          <h4>Gender Gap in Financial Literacy</h4>
+          <p>Women are 36% less likely than men to demonstrate financial literacy in developing economies — a gap that compounds gender inequality in income and wealth accumulation.</p>
+        </div>
+        <div class="impact-card animate-up">
+          <div class="big-num">50%</div>
+          <h4>Youth Without Financial Education</h4>
+          <p>Half of young people globally leave school without receiving any formal financial education, entering adult life without the tools to manage money effectively.</p>
+        </div>
+        <div class="impact-card animate-up">
+          <div class="big-num">3.5B</div>
+          <h4>People in Low-Wage Work</h4>
+          <p>More than half the global workforce earns less than $5.50 per day — where budgeting and financial planning become survival skills with enormous stakes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chain Reaction Visual -->
+  <section class="section" style="background:white;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">The Connection</span>
+        <h2>How Financial Literacy Drives SDG 8</h2>
+        <p>Financial literacy isn't just a personal skill — it's an engine of economic development at every level.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap:0; border:1px solid var(--stone); border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md);">
+        <div style="padding:32px 28px; border-right:1px solid var(--stone); background:var(--green-pale);">
+          <div style="font-size:2rem; margin-bottom:12px;">🏫</div>
+          <h4 style="font-family:'Playfair Display',serif; font-size:1.05rem; margin-bottom:8px; color:var(--green-deep);">Better Education</h4>
+          <p style="font-size:0.85rem; color:var(--text-mid); line-height:1.55;">Financial literacy education in schools equips young people with skills before they need them.</p>
+        </div>
+        <div style="padding:32px 28px; border-right:1px solid var(--stone); background:white;">
+          <div style="font-size:2rem; margin-bottom:12px;">💰</div>
+          <h4 style="font-family:'Playfair Display',serif; font-size:1.05rem; margin-bottom:8px; color:var(--text-dark);">Smarter Decisions</h4>
+          <p style="font-size:0.85rem; color:var(--text-mid); line-height:1.55;">Informed individuals avoid high-cost debt, build savings, and invest in themselves and businesses.</p>
+        </div>
+        <div style="padding:32px 28px; border-right:1px solid var(--stone); background:var(--blue-pale);">
+          <div style="font-size:2rem; margin-bottom:12px;">🏢</div>
+          <h4 style="font-family:'Playfair Display',serif; font-size:1.05rem; margin-bottom:8px; color:var(--blue-deep);">Economic Growth</h4>
+          <p style="font-size:0.85rem; color:var(--text-mid); line-height:1.55;">Higher savings rates, more entrepreneurship, and stable households drive economic productivity.</p>
+        </div>
+        <div style="padding:32px 28px; background:var(--green-deep); color:white;">
+          <div style="font-size:2rem; margin-bottom:12px;">🌍</div>
+          <h4 style="font-family:'Playfair Display',serif; font-size:1.05rem; margin-bottom:8px;">SDG 8 Targets Met</h4>
+          <p style="font-size:0.85rem; opacity:0.85; line-height:1.55;">More decent work, reduced poverty, inclusive growth — the cycle of positive change.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SDG 8 Targets -->
+  <section class="section impact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label blue">SDG Framework</span>
+        <h2>SDG 8 Key Targets</h2>
+        <p>These are the specific, measurable targets the UN has set under Goal 8 — and how financial literacy connects to each.</p>
+      </div>
+
+      <div class="targets-table">
+        <div class="targets-table-header">SDG 8 Targets &amp; Financial Literacy Connections</div>
+
+        <div class="target-row">
+          <div class="target-code">8.1</div>
+          <div class="target-text">
+            <h4>Sustained Per Capita Economic Growth</h4>
+            <p>Target 7% GDP growth in least developed countries. Financial literacy drives small business formation, investment, and productive labour — all components of GDP growth.</p>
+          </div>
+        </div>
+        <div class="target-row">
+          <div class="target-code">8.3</div>
+          <div class="target-text">
+            <h4>Decent Job Creation &amp; Entrepreneurship</h4>
+            <p>Promote policies that support job creation, entrepreneurship, and micro/small enterprise formalisation. Financial literacy enables entrepreneurs to manage cash flow, access credit, and sustain businesses.</p>
+          </div>
+        </div>
+        <div class="target-row">
+          <div class="target-code">8.6</div>
+          <div class="target-text">
+            <h4>Reduce Youth Not in Employment, Education or Training</h4>
+            <p>Substantially reduce the proportion of youth not in employment, education, or training (NEET) by 2020. Financial education is a critical component of broader youth empowerment programmes.</p>
+          </div>
+        </div>
+        <div class="target-row">
+          <div class="target-code">8.10</div>
+          <div class="target-text">
+            <h4>Universal Access to Financial Services</h4>
+            <p>Strengthen capacity of domestic financial institutions to expand access to banking, insurance, and financial services for all. Financial literacy is the demand-side complement — people must understand products to use them effectively.</p>
+          </div>
+        </div>
+        <div class="target-row">
+          <div class="target-code">8.b</div>
+          <div class="target-text">
+            <h4>Global Strategy for Youth Employment</h4>
+            <p>Develop and operationalise a global strategy for youth employment by 2020. Skills-based education including financial capability is central to youth employment strategies worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     PAGE: ABOUT
+════════════════════════════════════════ -->
+<section id="page-about" class="page-section">
+  <div style="display:block; padding: 100px 0 52px; background: linear-gradient(135deg, var(--green-pale) 0%, var(--warm-white) 100%); border-bottom: 1px solid var(--stone);">
+    <div class="container">
+      <span class="section-label">About This Project</span>
+      <h1 style="font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3rem); color:var(--green-deep); margin-bottom:12px;">Student-Led. UN-Inspired.</h1>
+      <p style="font-size:1.05rem; color:var(--text-mid); max-width:540px;">A project built with purpose — connecting classroom economics to real-world impact.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-text">
+          <span class="section-label">Our Story</span>
+          <h2>What is This Project?</h2>
+          <p>This website was created as part of a 12-week extracurricular summer project centred on the United Nations Sustainable Development Goals. Our focus: SDG 8 — Decent Work and Economic Growth.</p>
+          <p>We chose financial literacy as our theme because we believe that personal economic empowerment is one of the most direct ways individuals can contribute to — and benefit from — broader economic development. You don't have to wait for policy change. Understanding your money is something you can act on today.</p>
+          <p>The project involved researching the current state of financial literacy globally, identifying the key skills most people lack, and building tools and educational content that are genuinely useful rather than academic. Everything on this site is designed to be clear, practical, and accessible regardless of background or income level.</p>
+
+          <h3 style="font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--text-dark); margin-top:36px; margin-bottom:14px;">What We Explored</h3>
+          <p>Over the 12 weeks, we dug into ILO employment data, S&amp;P Global financial literacy surveys, UN SDG progress reports, and academic research on the relationship between financial education and economic outcomes. We also studied what actually works in financial literacy education — because information alone doesn't change behaviour.</p>
+          <p>The interactive budget calculator was built because we found that hands-on tools are far more effective at building financial awareness than passive reading. By entering real figures, users can see where their money actually goes — often for the first time.</p>
+
+          <h3 style="font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--text-dark); margin-top:36px; margin-bottom:14px;">The Bigger Picture</h3>
+          <p>SDG 8 is about more than statistics. It's about the billions of people working hard in precarious conditions, the young people entering a difficult job market without the skills to manage what they earn, and the communities held back by financial exclusion. Our aim was to create something useful that reflects the seriousness of that challenge.</p>
+          <p>If this site helps even one person understand their budget better, avoid a high-interest loan, or build their first savings goal — that matters. And at scale, that kind of change is what SDG 8 is all about.</p>
+        </div>
+
+        <div>
+          <div class="about-sidebar">
+            <div class="about-sidebar-header">
+              <h3>Project Details</h3>
+            </div>
+            <div class="about-sidebar-body">
+              <div class="sidebar-item">
+                <span class="dot"></span>
+                <span><strong>Focus Area:</strong> SDG 8 — Decent Work &amp; Economic Growth</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="dot"></span>
+                <span><strong>Theme:</strong> Financial Literacy &amp; Budgeting</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="dot"></span>
+                <span><strong>Duration:</strong> 12-week extracurricular summer project</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="dot"></span>
+                <span><strong>Type:</strong> Student-led independent project</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="dot"></span>
+                <span><strong>Built with:</strong> HTML, CSS, vanilla JavaScript</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="dot"></span>
+                <span><strong>Data sources:</strong> ILO, World Bank, S&amp;P Global, UN</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SDG colour strip -->
+          <div style="margin-top:24px; background:white; border:1px solid var(--stone); border-radius:var(--radius-md); padding:24px; box-shadow:var(--shadow-sm);">
+            <h4 style="font-family:'Playfair Display',serif; font-size:1rem; margin-bottom:16px; color:var(--text-dark);">The 17 Sustainable Development Goals</h4>
+            <p style="font-size:0.84rem; color:var(--text-mid); margin-bottom:16px;">This project focuses on Goal 8, but all 17 SDGs are interconnected. Financial literacy touches Goals 1 (No Poverty), 4 (Quality Education), 5 (Gender Equality), and 10 (Reduced Inequalities) as well.</p>
+            <div style="display:grid; grid-template-columns: repeat(17, 1fr); gap:3px; border-radius:6px; overflow:hidden;">
+              <div style="height:28px; background:#e5243b;"></div>
+              <div style="height:28px; background:#dda63a;"></div>
+              <div style="height:28px; background:#4c9f38;"></div>
+              <div style="height:28px; background:#c5192d;"></div>
+              <div style="height:28px; background:#ff3a21;"></div>
+              <div style="height:28px; background:#26bde2;"></div>
+              <div style="height:28px; background:#fcc30b;"></div>
+              <div style="height:28px; background:#a21942;"></div>
+              <div style="height:28px; background:#fd6925; outline:2px solid #fd6925;"></div>
+              <div style="height:28px; background:#dd1367;"></div>
+              <div style="height:28px; background:#fd9d24;"></div>
+              <div style="height:28px; background:#bf8b2e;"></div>
+              <div style="height:28px; background:#3f7e44;"></div>
+              <div style="height:28px; background:#0a97d9;"></div>
+              <div style="height:28px; background:#56c02b;"></div>
+              <div style="height:28px; background:#00689d;"></div>
+              <div style="height:28px; background:#19486a;"></div>
+            </div>
+            <p style="font-size:0.75rem; color:var(--text-light); margin-top:8px; text-align:center;">Colour strip representing all 17 UN SDGs — Goal 8 is orange.</p>
+          </div>
+
+          <div style="margin-top:24px; background:var(--blue-pale); border-radius:var(--radius-md); padding:20px 24px; border:1px solid #c8d9f0;">
+            <p style="font-size:0.86rem; color:var(--blue-deep); line-height:1.6;">
+              <strong>Disclaimer:</strong> The information on this site is for educational purposes. It reflects general financial principles and is not personalised financial advice. For advice specific to your situation, consult a qualified financial adviser.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div style="width:32px;height:32px;background:var(--green-mid);border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;color:white;">8</div>
+          SDG Financial Literacy
+        </div>
+        <p>A student-led extracurricular project exploring how financial education connects to the UN's Sustainable Development Goals — specifically SDG 8: Decent Work and Economic Growth.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a data-page="home">Home</a>
+        <a data-page="learn">Learn</a>
+        <a data-page="tools">Tools</a>
+        <a data-page="impact">Global Impact</a>
+        <a data-page="about">About</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="https://sdgs.un.org/goals/goal8" target="_blank" rel="noopener">UN SDG 8 →</a>
+        <a href="https://www.ilo.org" target="_blank" rel="noopener">ILO Data →</a>
+        <a href="https://www.worldbank.org" target="_blank" rel="noopener">World Bank →</a>
+        <a href="https://www.moneyhelper.org.uk" target="_blank" rel="noopener">MoneyHelper UK →</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 SDG 8 Financial Literacy Project. Student extracurricular project.</span>
+      <div class="un-badge">
+        <span class="color-dot"></span>
+        Inspired by UN Sustainable Development Goals
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
