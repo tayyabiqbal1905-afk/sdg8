@@ -34,7 +34,7 @@ This website was built as part of a 12-week extracurricular summer project focus
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR-USERNAME/sdg8-financial-literacy.git
+git clone https://github.com/YOUR-USERNAME/FinWise.git
 
 # Open in browser — no build step required
 open index.html
@@ -48,7 +48,7 @@ Or deploy instantly to:
 ## 📁 Project Structure
 
 ```
-sdg8-financial-literacy/
+FinWise/
 ├── index.html          # Main HTML (all pages)
 ├── css/
 │   └── style.css       # All styles
