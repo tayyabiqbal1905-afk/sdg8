@@ -1,4 +1,4 @@
-# SDG 8 — Financial Literacy & Decent Work
+# FinWise
 
 A student-led extracurricular project exploring **UN Sustainable Development Goal 8: Decent Work and Economic Growth** through financial literacy education and interactive tools.
 
